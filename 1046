@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int n,i,c1,c2;
+	int a[4];
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d %d %d %d",&a[0],&a[1],&a[2],&a[3]);
+		if(a[1]!=(a[0]+a[2])&&a[3]==(a[0]+a[2]))
+		c1++;
+		if(a[3]!=(a[0]+a[2])&&a[1]==(a[0]+a[2]))
+		c2++;
+	}
+	printf("%d %d",c1,c2);
+ } 
